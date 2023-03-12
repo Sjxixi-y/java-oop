@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ *  ArrayList集合
  */
 public class Main3 {
     public static void main(String[] args) {
