@@ -20,4 +20,11 @@ public class Emp {
     public void setID(String ID) {
         this.ID = ID;
     }
+
+    @Override
+    public String toString() {
+        return "Emp{" +
+                "ID='" + ID + '\'' +
+                '}';
+    }
 }
