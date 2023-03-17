@@ -54,8 +54,13 @@ public class MainDao {
         return arr;
     }
 
-    // 查询商品个数
+    // 查询商品种类
     public int length() {
         return arr.size();
+    }
+
+    // 获取商品数量
+    public int nub(int a) {
+        return arr.get(a).getNumber();
     }
 }
