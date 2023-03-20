@@ -9,7 +9,7 @@ import java.util.Set;
  */
 public class Main8 {
     public static void main(String[] args) {
-        Set<Integer> s = new HashSet<>();
+        Set<Integer> s = new HashSet<Integer>();
         // 添加元素
         s.add(80);
         s.add(81);
