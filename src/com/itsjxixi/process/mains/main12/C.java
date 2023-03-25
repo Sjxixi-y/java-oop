@@ -1,4 +1,4 @@
-package com.itsjxixi.process.main.main12;
+package com.itsjxixi.process.mains.main12;
 
 public class C {
     public static final Object obj1 = new Object();

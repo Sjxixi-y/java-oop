@@ -1,4 +1,4 @@
-package com.itsjxixi.process.main.main6;
+package com.itsjxixi.process.main;
 
 /**
  * 预备 1 2 3 发射

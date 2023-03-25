@@ -1,4 +1,4 @@
-package com.itsjxixi.process.main.mains.main1;
+package com.itsjxixi.process.mains.main1;
 
 public class TuZiRunnable implements Runnable{
     @Override

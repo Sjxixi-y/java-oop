@@ -1,4 +1,4 @@
-package com.itsjxixi.process.main.main11;
+package com.itsjxixi.process.mains.main11;
 
 public class A implements Runnable {
     B b = new B();
