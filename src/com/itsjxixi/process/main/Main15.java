@@ -1,4 +1,4 @@
-package com.itsjxixi.process.main.main15;
+package com.itsjxixi.process.main;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -17,10 +17,12 @@ public class Main15 {
             return num;
         };
 
-        FutureTask<Integer> task = new FutureTask<Integer>(c);
+        FutureTask<Integer> task = new FutureTask<>(c);
 
         Thread t = new Thread(task);
+
         t.start();
+
         System.out.println(task.get());
     }
 }

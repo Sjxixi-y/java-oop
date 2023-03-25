@@ -1,4 +1,4 @@
-package com.itsjxixi.process.main.main16;
+package com.itsjxixi.process.main;
 
 import java.util.concurrent.*;
 
@@ -8,6 +8,7 @@ import java.util.concurrent.*;
 public class Main16 {
     public static void main(String[] args) {
         ExecutorService e1 = Executors.newFixedThreadPool(1);
+
         Callable<Integer> c = () -> {
             int num = 0;
             for (int i = 0; i < 100; i++) {
@@ -18,6 +19,7 @@ public class Main16 {
         };
 
         e1.submit(c);
+
         e1.shutdown();
     }
 }

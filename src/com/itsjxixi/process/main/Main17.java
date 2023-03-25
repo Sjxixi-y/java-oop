@@ -1,4 +1,4 @@
-package com.itsjxixi.process.main.main17;
+package com.itsjxixi.process.main;
 
 import java.util.concurrent.*;
 
@@ -7,11 +7,11 @@ import java.util.concurrent.*;
  */
 public class Main17 {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        ExecutorService e1 = Executors.newFixedThreadPool(1);
+        ExecutorService e1 = Executors.newFixedThreadPool(2);
         // 线程任务提交，线程开始执行
         Future<Integer> f1 = e1.submit(() -> {
             int num = 0;
-            for (int i = 0; i <= 5000; i++) {
+            for (int i = 0; i <= 50; i++) {
                 num += i;
             }
             System.out.println(num);
@@ -20,12 +20,13 @@ public class Main17 {
         // 线程任务提交，线程开始执行
         Future<Integer> f2 = e1.submit(() -> {
             int num = 0;
-            for (int i = 5001; i <= 10000; i++) {
+            for (int i = 51; i <= 100; i++) {
                 num += i;
             }
             System.out.println(num);
             return num;
         });
+
         System.out.println(f1.get() + f2.get());
         e1.shutdown();
     }

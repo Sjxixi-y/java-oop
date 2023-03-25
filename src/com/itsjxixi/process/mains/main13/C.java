@@ -1,4 +1,4 @@
-package com.itsjxixi.process.main.main13;
+package com.itsjxixi.process.mains.main13;
 
 public class C {
     // 产品名字
@@ -32,7 +32,6 @@ public class C {
         if (cp) {
             try {
                 System.out.println("有商品，生产者等待中。");
-                System.out.println(this.getClass());
                 this.wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -41,7 +40,6 @@ public class C {
         System.out.println("正在生产商品" + name);
         try {
             Thread.sleep(1000);
-            System.out.println(this.getClass());
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
