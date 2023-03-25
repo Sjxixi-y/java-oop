@@ -6,9 +6,9 @@ package com.itsjxixi.process.main.main11;
 public class Main11 {
     public static void main(String[] args) {
         A a = new A();
-        Thread f = new Thread(a, "范豪");
-        Thread p = new Thread(a, "彭志雄");
-        Thread c = new Thread(a, "陈俊豪");
+        Thread f = new Thread(a, "A");
+        Thread p = new Thread(a, "B");
+        Thread c = new Thread(a, "C");
 
         f.start();
         p.start();

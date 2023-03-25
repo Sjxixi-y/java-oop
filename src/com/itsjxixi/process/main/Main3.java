@@ -1,6 +1,4 @@
-package com.itsjxixi.process.main.main3;
-
-import com.itsjxixi.process.main.main2.XuanShou;
+package com.itsjxixi.process.main;
 
 /**
  * 售票
@@ -9,7 +7,12 @@ import com.itsjxixi.process.main.main2.XuanShou;
  */
 public class Main3 {
     public static void main(String[] args) {
-        ShouPiaoKou su = new ShouPiaoKou();
+        Runnable su = () -> {
+            int piao = 200;
+            while (piao > -1) {
+                System.out.println(Thread.currentThread().getName() + "抢到了，还剩" + piao-- + "张票");
+            }
+        };
 
         Thread t1 = new Thread(su);
         Thread t2 = new Thread(su);
